@@ -1,9 +1,10 @@
+import React from 'react';
 // import "./BoxTurning.css";
 import "./BoxTurning2.css";
 
 const BoxTurning = () => {
   return (
-    <div className="h-screen bg-purple-900 flex justify-center items-center ">
+    <div className="h-screen w-screen bg-purple-900 flex justify-center items-center ">
       <div className="cube">
         <div className="top"></div>
         <div>

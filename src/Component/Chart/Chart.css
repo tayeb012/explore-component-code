@@ -1,0 +1,81 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --color-primary: #00ff95;
+  --color-label: #fffb00;
+  --color-text: #e2dede;
+  --font-family: "Poppins";
+}
+
+.card {
+  position: relative;
+  width: 360px;
+  background: #ff7b007c;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 50px 100px rgb(231, 8, 8);
+}
+
+
+.card h2 {
+  color: #f9f9f9;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0 0 2px;
+}
+
+.card p {
+  color: var(--color-text);
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.card .pulse {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: var(--color-primary);
+  top: 52px;
+  right: 40px;
+  border-radius: 50%;
+}
+
+
+.card .chart-area {
+  position: relative;
+}
+
+.card .chart-area .grid2 {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  height: 80%;
+  width: 100%;
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent 0% 3%,
+    #f9f9f9 3% 3.5%,
+    transparent 3% 18.65%
+  );
+}
+
+.card .chart-area .grid2::after {
+  content: "";
+  position: inherit;
+  z-index: -1;
+  top: inherit;
+  bottom: inherit;
+  width: inherit;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(247, 34, 200),
+    rgba(33, 12, 223, 0.9),
+    rgb(248, 215, 25)
+  );
+}
