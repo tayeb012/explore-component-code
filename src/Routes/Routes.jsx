@@ -4,6 +4,8 @@ import App from "../Component/Banner/App";
 import BoxTurning from "../Component/Boxturning/Boxturning";
 import Cube from "../Component/Cube/Cube";
 import Chart from "../Component/Chart/Chart";
+import Card from "../Component/Card/Card";
+import Slider from "../Component/Slider/Slider";
 
 const Routes = createBrowserRouter([
   {
@@ -21,6 +23,18 @@ const Routes = createBrowserRouter([
   {
     path: "/chart",
     element: <Chart />,
+  },
+  {
+    path: "/card",
+    element: <Card />,
+  },
+  {
+    path: "/slider",
+    element: <Slider />,
+  },
+  {
+    path: "/ppt-to-pdf",
+    element: <Slider />,
   },
 ]);
 
